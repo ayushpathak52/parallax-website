@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper{
+ 
+  height: 100vh;
+  perspective: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container{
+  height: 100%;
+  
+  transform-style: preserve-3d;
+ position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.background {
+position: absolute;
+transform:translateZ(-40px) scale(7);
+}
+.foreground {
+  position: absolute;
+  transform:translateZ(-20px) scale(3);
+  }
+
+.background, .foreground{
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+}
+
+h1{
+  font-size: 2rem;
+  position: absolute;
+  transform: translateZ(-10px) scale(2);
+}
+
+
+
+
+
